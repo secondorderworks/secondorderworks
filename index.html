@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Second Order Works | Fractional Operational Leadership</title>
+  <meta name="description" content="Fractional operational leadership and strategic support for founders and leadership teams navigating growth, change, and the challenges that rarely sit neatly in any one team's remit." />
+  <meta property="og:title" content="Second Order Works" />
+  <meta property="og:description" content="Fractional operational leadership and strategic support for founders and leadership teams navigating growth, change, and the challenges that rarely sit neatly in any one team's remit." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://secondorder.works" />
+  <meta property="og:image" content="https://secondorder.works/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Second Order Works" />
+  <meta name="twitter:description" content="Fractional operational leadership and strategic support for founders and leadership teams navigating growth, change, and the challenges that rarely sit neatly in any one team's remit." />
+  <meta name="twitter:image" content="https://secondorder.works/og-image.png" />
+  <link rel="canonical" href="https://secondorder.works" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --green: #2d4a3e;
+      --green-dark: #1e3329;
+      --cream: #f7f5f0;
+      --text: #1c1c1a;
+      --muted: #6b6b65;
+      --border: #e0ddd6;
+    }
+
+    html { font-size: 16px; scroll-behavior: smooth; }
+
+    body {
+      background: var(--cream);
+      color: var(--text);
+      font-family: 'Inter', system-ui, sans-serif;
+      font-weight: 300;
+      line-height: 1.7;
+    }
+
+    /* ── Hero ── */
+    .hero {
+      background: var(--green-dark);
+      color: #e8ede9;
+      padding: 52px 40px 64px;
+    }
+
+    .hero-inner {
+      max-width: 740px;
+      margin: 0 auto;
+    }
+
+    .wordmark {
+      display: block;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: rgba(232, 237, 233, 0.55);
+      margin-bottom: 48px;
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(2.4rem, 6vw, 3.75rem);
+      font-weight: 400;
+      line-height: 1.15;
+      color: #e8ede9;
+      margin-bottom: 28px;
+      max-width: 620px;
+    }
+
+    .hero h1 em {
+      font-style: italic;
+    }
+
+    .hero p {
+      font-size: 1.05rem;
+      color: rgba(232, 237, 233, 0.7);
+      max-width: 560px;
+      line-height: 1.75;
+    }
+
+    /* ── Main content ── */
+    main {
+      max-width: 740px;
+      margin: 0 auto;
+      padding: 0 40px 72px;
+    }
+
+    /* ── Services ── */
+    .services-section {
+      padding-top: 64px;
+    }
+
+    .section-label {
+      font-size: 0.65rem;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 40px;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+    }
+
+    .service {
+      background: var(--cream);
+      padding: 32px 28px;
+    }
+
+    .service-number {
+      font-size: 0.65rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      color: var(--green);
+      margin-bottom: 12px;
+      display: block;
+    }
+
+    .service h3 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.1rem;
+      font-weight: 400;
+      color: var(--text);
+      margin-bottom: 10px;
+      line-height: 1.3;
+    }
+
+    .service p {
+      font-size: 0.875rem;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    /* ── Divider ── */
+    hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 56px 0;
+    }
+
+    /* ── About strip ── */
+    .about {
+      padding-top: 56px;
+      border-top: 1px solid var(--border);
+      margin-top: 56px;
+    }
+
+    .about p {
+      font-size: 1.05rem;
+      color: var(--muted);
+      line-height: 1.8;
+      max-width: 600px;
+    }
+
+    .about p + p {
+      margin-top: 16px;
+    }
+
+    /* ── Contact ── */
+    .contact {
+      padding-top: 56px;
+      border-top: 1px solid var(--border);
+      margin-top: 56px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      gap: 32px;
+    }
+
+    .contact-left h2 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.5rem;
+      font-weight: 400;
+      margin-bottom: 10px;
+    }
+
+    .contact-left p {
+      font-size: 0.9rem;
+      color: var(--muted);
+      max-width: 380px;
+    }
+
+    .contact-links {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: flex-end;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 11px 24px;
+      background: var(--green-dark);
+      color: #e8ede9;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 400;
+      letter-spacing: 0.03em;
+      border-radius: 2px;
+      text-decoration: none;
+      transition: background 0.15s;
+      white-space: nowrap;
+    }
+
+    .btn:hover {
+      background: var(--green);
+    }
+
+    .link-secondary {
+      font-size: 0.82rem;
+      color: var(--muted);
+      text-decoration: none;
+    }
+
+    .link-secondary:hover {
+      color: var(--text);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    /* ── Footer ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 20px 40px;
+      max-width: 740px;
+      margin: 0 auto;
+    }
+
+    footer p {
+      font-size: 0.72rem;
+      color: var(--muted);
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 600px) {
+      .hero { padding: 44px 24px 56px; }
+      main { padding: 0 24px 56px; }
+      footer { padding: 20px 24px; }
+      .services { grid-template-columns: 1fr; }
+      .contact { flex-direction: column; align-items: flex-start; }
+      .contact-links { align-items: flex-start; }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Second Order Works",
+    "description": "Fractional operational leadership and strategic support for founders and leadership teams navigating growth, change, and complex organisational challenges.",
+    "url": "https://secondorder.works",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Edinburgh",
+      "addressCountry": "GB"
+    },
+    "founder": {
+      "@type": "Person",
+      "name": "Adam Alton",
+      "jobTitle": "Fractional Operations Leader",
+      "sameAs": "https://www.linkedin.com/in/adam-alton/"
+    },
+    "areaServed": "GB",
+    "serviceType": ["Fractional COO", "Operational Leadership", "Strategic Operations", "Organisational Design"]
+  }
+  </script>
+</head>
+<body>
+
+  <header class="hero">
+    <div class="hero-inner">
+      <span class="wordmark">Second Order Works</span>
+      <h1>Helping organisations<br>ask what comes<br>next.</h1>
+      <p>
+        I provide fractional operational leadership and strategic support to founders
+        and leadership teams - helping them navigate growth, change, and the challenges
+        that rarely sit neatly in any one team's remit.
+      </p>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="services-section">
+      <p class="section-label">What I do</p>
+      <div class="services">
+
+        <div class="service">
+          <span class="service-number">01</span>
+          <h3>Strategic Operations</h3>
+          <p>I help organisations turn strategy into execution - improving planning, decision-making, governance and operational effectiveness so that what matters actually gets done.</p>
+        </div>
+
+        <div class="service">
+          <span class="service-number">02</span>
+          <h3>Fractional Leadership Support</h3>
+          <p>I provide experienced operational leadership to founders, CEOs and leadership teams, without the cost or commitment of a full-time hire - a trusted partner for the decisions that count.</p>
+        </div>
+
+        <div class="service">
+          <span class="service-number">03</span>
+          <h3>Growth &amp; Scaling</h3>
+          <p>As organisations grow, what worked at one stage often stops working at the next. I help leadership teams think through what needs to change, and support the people within their teams who are responsible for making it happen.</p>
+        </div>
+
+        <div class="service">
+          <span class="service-number">04</span>
+          <h3>Problem Solving &amp; Special Projects</h3>
+          <p>I take on complex operational challenges, change initiatives and cross-functional projects that don't fit neatly into an existing team, and see them through.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="about">
+      <p>
+        Second Order Works is built around a simple idea: the best decisions aren't just good in the moment,
+        they're good for what follows. Second order thinking means looking beyond the immediate outcome
+        to ask "and then what?" - considering the downstream consequences that others often miss.
+        Most organisations are good at identifying what needs to happen and doing it. Fewer have someone
+        consistently asking what comes next. Those downstream consequences are often where things quietly
+        go wrong, and having someone who thinks this way across the whole organisation - rather than just
+        within a single function - is rarer than it should be. It's one of the most valuable things
+        I bring to the teams I work with.
+      </p>
+      <p>
+        I bring over 13 years of senior operations and leadership experience in the technology sector,
+        working at board level alongside CEOs through periods of rapid growth, funding change, and
+        organisational transformation - including scaling a team from 20 to 90 people in under 18 months. I work with founders and leadership teams at scale-ups and growing businesses, where
+        good advice and experienced support can still make a real difference. Whether that's acting as a
+        fractional leader, supporting a significant change initiative, or being a trusted sounding board,
+        my focus is always on helping you make real progress on the things that matter most.
+      </p>
+    </div>
+
+    <div class="contact">
+      <div class="contact-left">
+        <h2>Let's talk.</h2>
+        <p>If you're facing an operational challenge or wondering whether this kind of support could help, I'd be happy to have a conversation.</p>
+        <p style="margin-top: 10px; font-size: 0.82rem; color: var(--muted);">Based in Edinburgh. Working with organisations across the UK - in person where it adds value, remotely where it doesn't.</p>
+      </div>
+      <div class="contact-links">
+        <a href="#" class="btn" id="email-btn">Get in touch</a>
+        <a href="https://www.linkedin.com/in/adam-alton/" target="_blank" rel="noopener noreferrer" class="link-secondary">LinkedIn ↗</a>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Second Order Works &nbsp;·&nbsp; This site does not collect or store any personal data.</p>
+  </footer>
+
+  <script>
+    (function() {
+      var u = 'adam';
+      var d = 'secondorder.works';
+      var e = u + '@' + d;
+      var btn = document.getElementById('email-btn');
+      if (btn) {
+        btn.href = 'mailto:' + e;
+        btn.textContent = e;
+      }
+    })();
+  </script>
+
+</body>
+</html>

@@ -160,15 +160,33 @@
       margin-top: 56px;
     }
 
-    .about p {
+    .about-inner {
+      display: flex;
+      gap: 40px;
+      align-items: flex-start;
+    }
+
+    .headshot {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center top;
+      flex-shrink: 0;
+    }
+
+    .about-text p {
       font-size: 1.05rem;
       color: var(--muted);
       line-height: 1.8;
-      max-width: 600px;
     }
 
-    .about p + p {
+    .about-text p + p {
       margin-top: 16px;
+    }
+
+    @media (max-width: 480px) {
+      .about-inner { flex-direction: column; gap: 24px; }
     }
 
     /* ── Contact ── */
@@ -328,6 +346,9 @@
     </section>
 
     <div class="about">
+      <div class="about-inner">
+        <img src="headshot.jpg" alt="Adam Alton" class="headshot" />
+        <div class="about-text">
       <p>
         Second Order Works is built around a simple idea: the best decisions aren't just good in the moment,
         they're good for what follows. Second order thinking means looking beyond the immediate outcome
@@ -346,6 +367,8 @@
         fractional leader, supporting a significant change initiative, or being a trusted sounding board,
         my focus is always on helping you make real progress on the things that matter most.
       </p>
+        </div>
+      </div>
     </div>
 
     <div class="contact">
